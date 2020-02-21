@@ -36,8 +36,8 @@ app.post('/msg',async (req,res)=>{
 })
 
 db.sync().then(()=>{
-    app.listen(PORT,()=>{
-        console.log('Server started at http://localhost:1234 '+PORT )
+    app.listen(process.env.PORT || 1234,()=>{
+        console.log('Server started at http://localhost:1234 ')
     })
 })
 

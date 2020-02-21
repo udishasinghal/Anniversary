@@ -16,6 +16,7 @@ const Mess = db.define('mess',{
     }
 })
 
-module.exports(
-    db,Mess
-)
+module.exports = {
+    db : db,
+    mess : Mess
+};
